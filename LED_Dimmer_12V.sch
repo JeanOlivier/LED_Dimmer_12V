@@ -1,0 +1,235 @@
+EESchema Schematic File Version 2
+LIBS:LED_Dimmer_12V-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LED_Dimmer_12V-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L NE555 IC1
+U 1 1 5AEDD3CD
+P 4250 3150
+F 0 "IC1" H 3850 3500 50  0000 L CNN
+F 1 "NE555" H 3850 2800 50  0000 L CNN
+F 2 "Housings_DIP:DIP-8_W7.62mm" H 4250 3150 50  0001 C CNN
+F 3 "" H 4250 3150 50  0001 C CNN
+	1    4250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT POT1
+U 1 1 5AEDD428
+P 5550 3600
+F 0 "POT1" V 5375 3600 50  0000 C CNN
+F 1 "10K" V 5450 3600 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Alps_RK163_Single_Vertical" H 5550 3600 50  0001 C CNN
+F 3 "" H 5550 3600 50  0001 C CNN
+	1    5550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5AEDD49F
+P 5050 2650
+F 0 "R1" V 5130 2650 50  0000 C CNN
+F 1 "10K" V 5050 2650 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 4980 2650 50  0001 C CNN
+F 3 "" H 5050 2650 50  0001 C CNN
+	1    5050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BS107-RESCUE-LED_Dimmer_12V T1
+U 1 1 5AEDD58E
+P 6200 3750
+F 0 "T1" H 6400 3825 50  0000 L CNN
+F 1 "IRF610" H 6400 3750 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Horizontal" H 6400 3675 50  0001 L CIN
+F 3 "" H 6200 3750 50  0001 L CNN
+	1    6200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AEDD5F1
+P 4750 4050
+F 0 "C1" H 4775 4150 50  0000 L CNN
+F 1 "0.1µF" H 4775 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 4788 3900 50  0001 C CNN
+F 3 "" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_Series LS1
+U 1 1 5AEDD612
+P 6300 2850
+F 0 "LS1" H 6300 3075 50  0000 C CNN
+F 1 "LED_Series" H 6300 3000 50  0000 C CNN
+F 2 "Connectors:PINHEAD1-2" H 6200 2850 50  0001 C CNN
+F 3 "" H 6200 2850 50  0000 C CNN
+	1    6300 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5AEDD65B
+P 4250 4300
+F 0 "#PWR01" H 4250 4050 50  0001 C CNN
+F 1 "GND" H 4250 4150 50  0000 C CNN
+F 2 "" H 4250 4300 50  0001 C CNN
+F 3 "" H 4250 4300 50  0001 C CNN
+	1    4250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D2
+U 1 1 5AEDDA46
+P 5150 3800
+F 0 "D2" H 5150 3900 50  0000 C CNN
+F 1 "D" H 5150 3700 50  0000 C CNN
+F 2 "Diodes_SMD:sod80c" H 5150 3800 50  0001 C CNN
+F 3 "" H 5150 3800 50  0001 C CNN
+	1    5150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L D D1
+U 1 1 5AEDDAF7
+P 5150 3350
+F 0 "D1" H 5150 3450 50  0000 C CNN
+F 1 "D" H 5150 3250 50  0000 C CNN
+F 2 "Diodes_SMD:sod80c" H 5150 3350 50  0001 C CNN
+F 3 "" H 5150 3350 50  0001 C CNN
+	1    5150 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 3150 5900 3150
+Wire Wire Line
+	3750 2950 3400 2950
+Wire Wire Line
+	3400 2950 3400 3800
+Wire Wire Line
+	3400 3800 5000 3800
+Wire Wire Line
+	4750 3350 4750 3900
+Wire Wire Line
+	4750 3350 5000 3350
+Connection ~ 4750 3800
+Wire Wire Line
+	5300 3350 5550 3350
+Wire Wire Line
+	3750 3350 3550 3350
+Wire Wire Line
+	3550 3350 3550 2350
+Wire Wire Line
+	4750 2950 5750 2950
+Wire Wire Line
+	5750 2950 5750 3600
+Wire Wire Line
+	5750 3600 5700 3600
+Wire Wire Line
+	4250 3550 4250 4300
+Wire Wire Line
+	3300 4200 6300 4200
+Connection ~ 4250 4200
+Wire Wire Line
+	5050 2350 5050 2500
+Wire Wire Line
+	5050 3150 5050 2800
+Connection ~ 5050 2350
+Wire Wire Line
+	6300 3100 6300 3550
+Wire Wire Line
+	6300 2350 6300 2600
+Wire Wire Line
+	5900 3150 5900 3800
+Wire Wire Line
+	5900 3800 6000 3800
+Connection ~ 5050 3150
+Wire Wire Line
+	6300 4200 6300 3950
+Connection ~ 4750 4200
+Wire Wire Line
+	5300 3800 5550 3800
+Wire Wire Line
+	5550 3800 5550 3750
+Wire Wire Line
+	5550 3350 5550 3450
+Wire Wire Line
+	4250 2150 4250 2750
+Wire Wire Line
+	3550 2350 6300 2350
+Connection ~ 4250 2350
+$Comp
+L C C2
+U 1 1 5AEDF12B
+P 3700 4050
+F 0 "C2" H 3725 4150 50  0000 L CNN
+F 1 "10pF" H 3725 3950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" H 3738 3900 50  0001 C CNN
+F 3 "" H 3700 4050 50  0001 C CNN
+	1    3700 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3150 3700 3150
+Wire Wire Line
+	3700 3150 3700 3900
+Connection ~ 3700 4200
+$Comp
+L CONN_01X02_MALE CONN1
+U 1 1 5AEDF860
+P 4550 2050
+F 0 "CONN1" H 4550 2225 50  0000 C CNN
+F 1 "12V" H 4550 1850 50  0000 C CNN
+F 2 "Connectors:PINHEAD1-2" H 4550 2150 50  0001 C CNN
+F 3 "" H 4550 2150 50  0001 C CNN
+	1    4550 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 1950 3300 4200
+Wire Wire Line
+	3300 1950 4250 1950
+$EndSCHEMATC
