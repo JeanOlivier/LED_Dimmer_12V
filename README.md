@@ -5,6 +5,10 @@ Designed for 12V+ power supply (but should work for 5V+) and using a CMOS transi
 
 The 555 part is inspired by [this circuit](http://www.pcbheaven.com/circuitpages/LED_PWM_Dimmer/).
 
+## Circuit
+
+![Circuit](LED_Dimmer_12V_Circuit.png)
+
 ## Parts
 - C1 is mandatory and should be small, 10nF works fine
 - R1 should be as low a possible without drawing too much current from the 555. Higher values might limit the maximum brightness. R1 of 1k‎Ω to 10kΩ work fine.
