@@ -188,9 +188,9 @@
     (pad 1 thru_hole circle (at 0 0 180) (size 2.34 2.34) (drill 1.3) (layers *.Cu *.Mask)
       (net 5 "Net-(D1-Pad1)"))
     (model Potentiometers.3dshapes/Potentiometer_Alps_RK163_Single_Vertical.wrl
-      (at (xyz 0 0 0))
+      (at (xyz 0.15744 0.62976 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 180 90 0))
     )
   )
 
@@ -459,7 +459,7 @@
     )
   )
 
-  (gr_text "12V LED Dimmer v1.0\n\nJean Olivier Simoneau (2018)\n" (at 224.79 123.825) (layer B.Cu)
+  (gr_text "12V LED Dimmer v1.1\n\nJean Olivier Simoneau (2018)\n" (at 224.79 123.825) (layer B.Cu)
     (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
   )
   (gr_line (start 199.39 130.175) (end 199.39 109.855) (angle 90) (layer Edge.Cuts) (width 0.15))
